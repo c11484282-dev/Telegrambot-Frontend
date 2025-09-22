@@ -9,10 +9,10 @@ function App() {
 
   // Get user data from Telegram
   const user = window.Telegram?.WebApp?.initDataUnsafe?.user || { username: 'Guest', id: 0};
-  // Example: Send data to your Render backend
+  // Send quiz request to Render backend
   const handleQuizRequest = async () => {
     try {
-      const response = await fetch('https://hacker-bot.onrender.com/newquiz', {
+      const response = await fetch('https://telegram-bot-backend-8cpr.onrender.com/newquiz', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json'},        body: JSON.stringify({ userId: user.id, topic: 'roblox', difficulty: 'hard' }),
       });
