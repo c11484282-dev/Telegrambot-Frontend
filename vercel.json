@@ -1,0 +1,11 @@
+{
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ],
+  "builds": [
+    { "src": "index.html", "use": "@vercel/static-build", "config": { "distDir": "dist" } }
+  ],
+  "env": {
+    "VITE_TELEGRAM_BOT_URL": "@telegram-bot-backend-8cpr.onrender.com"
+  }
+}
