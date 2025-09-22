@@ -3,8 +3,6 @@
   }}```
 
 ##### File 2:`vercel.json`
-Correct for Vercel static site routing.
-
 ```json
 {"rewrites": [
     {"source":"/(.*)","destination":"/index.html"
@@ -13,8 +11,6 @@ Correct for Vercel static site routing.
       }}  ]}```
 
 ##### File 3:`vite.config.js`
-Correct for Vite setup.
-
 ```javascript
 import { defineConfig} from 'vite';
 import react from '@vitejs/plugin-react';
