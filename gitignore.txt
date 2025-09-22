@@ -1,9 +1,9 @@
 node_modules
 dist.env```
 
-#### Steps to Update Vercel
+#### Steps to Fix Vercel
 1. **Update Local Project**:
-   - In your`Telegrambot-Frontend` folder (https://github.com/c11484282-dev/Telegrambot-Frontend), replace the files with the ones above.
+   - In your`Telegrambot-Frontend` folder (https://github.com/c11484282-dev/Telegrambot-Frontend), replace or create the files above.
    - Ensure the folder structure is:
      ```
      Telegrambot-Frontend/
