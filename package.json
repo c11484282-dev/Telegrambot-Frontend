@@ -2,8 +2,8 @@
   },"dependencies": {"react":"^18.2.0","react-dom":"^18.2.0","@vitejs/plugin-react":"^4.0.0","vite":"^4.3.9"
   }}```
 
-##### 3. File 2:`vercel.json`
-This tells Vercel how to build and route your app.
+##### File 2:`vercel.json`
+Unchanged, as it’s correct for Vercel routing.
 
 ```json
 {"rewrites": [
@@ -12,8 +12,8 @@ This tells Vercel how to build and route your app.
     {"src":"index.html","use":"@vercel/static-build","config": {"distDir":"dist"
       }}  ]}```
 
-##### 4. File 3:`vite.config.js`
-This configures Vite (a fast build tool) for React.
+##### File 3:`vite.config.js`
+Unchanged, correct for Vite.
 
 ```javascript
 import { defineConfig} from 'vite';
@@ -22,4 +22,4 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   build: {
-    outDir: 'dist',},});
+    outDir: 'dist'}});
