@@ -6,6 +6,6 @@
     { "src": "index.html", "use": "@vercel/static-build", "config": { "distDir": "dist" } }
   ],
   "env": {
-    "VITE_TELEGRAM_BOT_URL": "@telegram-bot-backend-8cpr.onrender.com"
+    "VITE_TELEGRAM_BOT_URL": "https://telegram-bot-backend-8cpr.onrender.com"
   }
 }
