@@ -1,0 +1,43 @@
+node_modules
+dist.env```
+
+---
+
+#### Deploy to Vercel
+1. **Install Vercel CLI** (if not already installed):
+   - Run:`npm install -g vercel`
+2. **Initialize Git** (if not already a Git repo):
+   - In your`hacker-mini-app` folder, run:
+     ```bash
+     git init
+     git add.     git commit -m"Initial Mini App"
+     ```
+3. **Push to GitHub** (optional, for Vercel integration):
+   - Create a repo on GitHub (e.g.,`hacker-mini-app`).
+   - Run:
+     ```bash
+     git remote add origin https://github.com/your-username/hacker-mini-app.git
+     git push -u origin main
+     ```
+4. **Deploy to Vercel**:
+   - Run:`vercel`
+   - Follow prompts to log in, link to your GitHub repo (or deploy directly from your local folder).
+   - Vercel will build and deploy, giving you a URL like`https://hacker-mini-app.vercel.app`.
+5. **Set Mini App in Telegram**:
+   - Message @BotFather, type`/mybots`, select your bot, choose **Edit Bot** > **Edit Web App**.
+   - Set the URL to your Vercel URL (e.g.,`https://hacker-mini-app.vercel.app`).
+
+---
+
+### Part 3: `.env` File Without Payment Gateway
+Since you’re not sharing the`PAYMENT_PROVIDER_TOKEN`, I’ll exclude it and provide a `.env` file with the other variables. You didn’t share specific values, so I’ll use placeholders and remind you how to get each one. If you want to send your real values later, I’ll update the file!
+
+#### `.env` File
+```env
+BOT_TOKEN=123456:ABC-DEF1234ghIkl-xyz
+OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ADMIN_USER_ID=123456789
+BOT_USERNAME=@HackerBotX
+MINIAPP_URL=https://hacker-mini-app.vercel.app
+WEBHOOK_URL=https://hacker-bot.onrender.com
+PORT=8080
