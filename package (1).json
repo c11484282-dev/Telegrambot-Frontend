@@ -1,0 +1,25 @@
+{"name":"hacker-mini-app","version":"1.0.0","private": true,"scripts": {"dev":"vite","build":"vite build","preview":"vite preview"
+  },"dependencies": {"react":"^18.2.0","react-dom":"^18.2.0","@vitejs/plugin-react":"^4.0.0","vite":"^4.3.9"
+  }}```
+
+##### File 2:`vercel.json`
+Correct for Vercel static site routing.
+
+```json
+{"rewrites": [
+    {"source":"/(.*)","destination":"/index.html"
+    }],"builds": [
+    {"src":"index.html","use":"@vercel/static-build","config": {"distDir":"dist"
+      }}  ]}```
+
+##### File 3:`vite.config.js`
+Correct for Vite setup.
+
+```javascript
+import { defineConfig} from 'vite';
+import react from '@vitejs/plugin-react';
+
+export default defineConfig({
+  plugins: [react()],
+  build: {
+    outDir: 'dist'}});
