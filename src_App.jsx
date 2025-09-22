@@ -2,19 +2,15 @@ import { useEffect} from 'react';
 
 function App() {
   useEffect(() => {
-    // Initialize Telegram Web App
     if (window.Telegram && window.Telegram.WebApp) {
       window.Telegram.WebApp.ready();
       window.Telegram.WebApp.expand();}  }, []);
 
-  // Get user data from Telegram
-  const user = window.Telegram?.WebApp?.initDataUnsafe?.user || { username: 'Guest', id: 0};
-  // Send quiz request to Render backend
-  const handleQuizRequest = async () => {
+  const user = window.Telegram?.WebApp?.initDataUnsafe?.user || { username: 'Guest', id: 0};  const handleQuizRequest = async () => {
     try {
       const response = await fetch('https://telegram-bot-backend-8cpr.onrender.com/newquiz', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json'},        body: JSON.stringify({ userId: user.id, topic: 'roblox', difficulty: 'hard' }),
+        headers: { 'Content-Type': 'application/json'},        body: JSON.stringify({ userId: user.id, topic: 'roblox', difficulty: 'hard' })
       });
       const quiz = await response.json();
       alert('Quiz: ' + JSON.stringify(quiz));} catch (error) {
