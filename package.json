@@ -3,7 +3,7 @@
   }}```
 
 ##### File 2:`vercel.json`
-Unchanged, as it’s correct for Vercel routing.
+Correct for Vercel static site routing.
 
 ```json
 {"rewrites": [
@@ -13,7 +13,7 @@ Unchanged, as it’s correct for Vercel routing.
       }}  ]}```
 
 ##### File 3:`vite.config.js`
-Unchanged, correct for Vite.
+Correct for Vite setup.
 
 ```javascript
 import { defineConfig} from 'vite';
