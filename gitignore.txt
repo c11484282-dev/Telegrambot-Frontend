@@ -3,7 +3,7 @@ dist.env```
 
 #### Steps to Update Vercel
 1. **Update Local Project**:
-   - In your`Telegrambot-Frontend` folder, replace the files with the ones above.
+   - In your`Telegrambot-Frontend` folder (https://github.com/c11484282-dev/Telegrambot-Frontend), replace the files with the ones above.
    - Ensure the folder structure is:
      ```
      Telegrambot-Frontend/
@@ -16,7 +16,7 @@ dist.env```
      │   ├── index.js
      ├──.gitignore
      ```
-2. **Install Dependencies Locally** (optional, for testing):
+2. **Test Locally** (optional):
    ```bash
    npm install
    npm run dev
