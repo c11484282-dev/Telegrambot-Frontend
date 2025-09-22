@@ -44,20 +44,3 @@ function App() {
     <div style={{ padding: '20px', fontFamily: 'Arial' }}>
       <h1>Welcome, {user.username}!</h1>
       <p>Your Telegram ID: {user.id}</p>
-      <button
-        style={{ padding: '10px', background: '#27A5E5', color: 'white', border: 'none', cursor: 'pointer' }}
-        onClick={handleQuizRequest}
-      >
-        Get Roblox Quiz
-      </button>
-      <div>
-        <h2>Referral Program</h2>
-        <p>Share your referral code to earn credits:</p>
-        <input type="text" value={referralCode} readOnly />
-        <button onClick={fetchReferralCode}>Get Referral Code</button>
-      </div>
-    </div>
-  );
-}
-
-export default App;
